@@ -10,7 +10,7 @@ export default function App() {
   const [city, setCity] = useState("");
   const [error, setError] = useState({
     error: false,
-    message: "",
+    message: "Coloque una Ciudad que exista",
   });
   const [loading, setLoading] = useState(false);
 
@@ -44,7 +44,9 @@ export default function App() {
         city: data.location.name,
         country: data.location.country,
         temperature: data.current.temp_c,
+        realFeel: data.current.feelslike_c,
         condition: data.current.condition.code,
+        humidity: data.current.humidity,
         conditionText: data.current.condition.text,
         icon: data.current.condition.icon,
       });
@@ -62,12 +64,13 @@ export default function App() {
       sx={{ mt: 2 }}
     >
       <Typography
-        variant="h3"
+        variant="h4"
         component="h1"
         align="center"
+        color="blueviolet"
         gutterBottom
       >
-        Weather App
+        Un Salto al Clima 
       </Typography>
       <Box
         sx={{ display: "grid", gap: 2 }}
@@ -109,12 +112,13 @@ export default function App() {
           <Typography
             variant="h4"
             component="h2"
+            color="blueviolet"
           >
             {weather.city}, {weather.country}
           </Typography>
           <Box
             component="img"
-            alt={weather.conditionText}
+            alt={weather.conditionText} 
             src={weather.icon}
             sx={{ margin: "0 auto" }}
           />
@@ -128,7 +132,19 @@ export default function App() {
             variant="h6"
             component="h4"
           >
-            {weather.conditionText}
+            {weather.conditionText} 
+          </Typography>
+          <Typography
+            variant="h6"
+            component="h6"
+          >
+           sensación térmica {weather.realFeel} °C 
+          </Typography>
+          <Typography
+            variant="h6"
+            component="h6"
+          >
+            {weather.humidity} % hunedad relativa
           </Typography>
         </Box>
       )}

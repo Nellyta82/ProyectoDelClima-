@@ -1,7 +1,80 @@
-body{
-    background-color: black;
+:root {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to top, rgb(1, 28, 1), 20%, rgb(27, 2, 86));
+  }
+
+    
+
+#Titulo:hover{
+    color: greenyellow;
+  } 
+  
+
+#city{
+  color:blueviolet;
+  background-color: aliceblue;
+  border-radius: 5%;
+}  
+
+#city:hover{
+  color: rgb(17, 43, 235);
 }
 
-h5{
-    color: blueviolet;
+#boton:hover{
+  color: greenyellow;
+
 }
+
+#ciudad:hover{
+  color: greenyellow;
+}
+
+#imagen:hover{
+  animation-name: surprise;
+      -webkit-animation-name: surprise;
+      -moz-animation-name: surprise;
+  animation-duration: .8s;
+      -webkit-animation-duration: .8s;
+      -moz-animation-duration: .8s;
+}
+
+  @keyframes surprise
+  {
+      0% {transform: rotate(0deg) scale(1,1);;}
+      10% {transform: rotate(7deg) scale(2,2);}
+      20% {transform: rotate(-7deg) scale(2,2);}
+      30% {transform: rotate(7deg) scale(2,2);}
+      40% {transform: rotate(-7deg) scale(2,2);}
+      50% {transform: rotate(7deg) scale(2,2);}
+      60% {transform: rotate(-7deg) scale(2,2);}
+      70% {transform: rotate(7deg) scale(2,2);}
+      80% {transform: rotate(-7deg) scale(2,2);}
+      90% {transform: rotate(7deg) scale(2,2);}
+      100% {transform: rotate(0deg) scale(1,1);}
+  }
+
+#temperatura:hover{
+  color: greenyellow;
+}
+
+#condicion:hover{
+  color: greenyellow;
+}
+
+#sensacion:hover{
+  color: greenyellow;
+}
+
+#humedad:hover{
+  color: greenyellow;
+}
+
+#sello:hover{
+  color: greenyellow;
+}
+
+
+
+

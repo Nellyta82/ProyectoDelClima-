@@ -1,5 +1,6 @@
 //console.log(import.meta.env.VITE_API_KEY);
 
+import { Transform, Translate } from "@mui/icons-material";
 import { LoadingButton } from "@mui/lab";
 import { Box, Container, TextField, Typography } from "@mui/material";
 import { useState } from "react";
@@ -60,23 +61,28 @@ export default function App() {
 
   return (
     <Container
-      maxWidth="xs"
-      sx={{ mt: 2 }}
+      maxWidth="s"
+      sx={{ mt: 5 , boxsizing: "border-box" , backgroundColor: "rgb(27, 2, 86)" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
     >
       <Typography
+        id="Titulo"
         variant="h4"
         component="h1"
         align="center"
         color="blueviolet"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center"
         gutterBottom
       >
         Un Salto al Clima 
       </Typography>
       <Box
-        sx={{ display: "grid", gap: 2 }}
+        sx={{ display: "grid", gap: 2 , paddingTop: 2 , justifyContent:"center" , alignItems:"center" , background:"transparent" }}
         component="form"
         autoComplete="off"
         onSubmit={onSubmit}
+        
       >
         <TextField
           id="city"
@@ -88,13 +94,16 @@ export default function App() {
           onChange={(e) => setCity(e.target.value)}
           error={error.error}
           helperText={error.message}
+      
         />
 
         <LoadingButton
+          id="boton"
           type="submit"
           variant="contained"
           loading={loading}
           loadingIndicator="Buscando..."
+          
         >
           Buscar
         </LoadingButton>
@@ -107,9 +116,11 @@ export default function App() {
             display: "grid",
             gap: 2,
             textAlign: "center",
+            color:"blueviolet",
           }}
         >
-          <Typography
+          <Typography 
+            id="ciudad"
             variant="h4"
             component="h2"
             color="blueviolet"
@@ -117,30 +128,35 @@ export default function App() {
             {weather.city}, {weather.country}
           </Typography>
           <Box
+            id="imagen"
             component="img"
             alt={weather.conditionText} 
             src={weather.icon}
             sx={{ margin: "0 auto" }}
           />
           <Typography
+            id="temperatura"
             variant="h5"
             component="h3"
           >
             {weather.temperature} °C
           </Typography>
           <Typography
+            id="condicion"
             variant="h6"
             component="h4"
           >
             {weather.conditionText} 
           </Typography>
           <Typography
+            id="sensacion"
             variant="h6"
             component="h6"
           >
            sensación térmica {weather.realFeel} °C 
           </Typography>
           <Typography
+            id="humedad"
             variant="h6"
             component="h6"
           >
@@ -150,6 +166,7 @@ export default function App() {
       )}
 
       <Typography
+        id="sello"
         textAlign="center"
         sx={{ mt: 2, fontSize: "10px" }}
       >

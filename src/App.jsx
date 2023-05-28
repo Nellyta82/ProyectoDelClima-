@@ -63,15 +63,16 @@ export default function App() {
 
   return (
     <Container
+      id="Contenedor"
       maxWidth="s"
-      sx={{ mt: 5 , boxsizing: "border-box" , backgroundColor: "rgb(27, 2, 86)" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
+      sx={{ mt: 3 , boxsizing: "border-box" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
     >
       <Typography
         id="Titulo"
         variant="h4"
         component="h1"
         align="center"
-        color="blueviolet"
+        color="white"
         justifyContent="center"
         alignItems="center"
         textAlign="center"
@@ -113,19 +114,21 @@ export default function App() {
 
       {weather.city && (
         <Box
+          id="box"
           sx={{
             mt: 2,
             display: "grid",
             gap: 2,
             textAlign: "center",
-            color:"blueviolet",
+            color:"white",
+            
           }}
         >
           <Typography 
             id="ciudad"
             variant="h4"
             component="h2"
-            color="blueviolet"
+            color="white"
           >
             {weather.city}, {weather.country}
           </Typography>
@@ -138,28 +141,28 @@ export default function App() {
           />
           <Typography
             id="temperatura"
-            variant="h5"
+            variant="h3"
             component="h3"
           >
             {weather.temperature} °C
           </Typography>
           <Typography
             id="condicion"
-            variant="h6"
+            variant="h5"
             component="h4"
           >
             {weather.conditionText} 
           </Typography>
           <Typography
             id="sensacion"
-            variant="h6"
+            variant="h5"
             component="h6"
           >
            sensación térmica {weather.realFeel} °C 
           </Typography>
           <Typography
             id="humedad"
-            variant="h6"
+            variant="h5"
             component="h6"
           >
             {weather.humidity} % hunedad relativa

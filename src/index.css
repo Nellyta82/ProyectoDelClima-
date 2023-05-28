@@ -2,33 +2,51 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(to top, rgb(1, 28, 1), 20%, rgb(27, 2, 86));
+    background-image:url(../gif/lunaysol.gif);
+    background-size: cover;
+    background-position: center 5%;
   }
+
+#Contenedor{
+  background-color: transparent;
+  position: absolute;
+  transform: translate(0%, 0%);
+  height: 600px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 15px black;
+  
+}  
+
+#box{
+  text-shadow: 3px 3px 3px black;
+}
 
     
 
 #Titulo:hover{
-    color: greenyellow;
+    color: springgreen;
   } 
   
 
 #city{
-  color:blueviolet;
+  color:rgb(32, 32, 123);
   background-color: aliceblue;
   border-radius: 5%;
 }  
 
 #city:hover{
-  color: rgb(17, 43, 235);
+  color: blue;
 }
 
 #boton:hover{
-  color: greenyellow;
+  color: springgreen;
 
 }
 
 #ciudad:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 #imagen:hover{
@@ -56,23 +74,23 @@
   }
 
 #temperatura:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 #condicion:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 #sensacion:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 #humedad:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 #sello:hover{
-  color: greenyellow;
+  color: springgreen;
 }
 
 

@@ -4,20 +4,19 @@ import { Outlet, Link, Form } from "react-router-dom"
 
 const NavBarExample = () => {
     return(
-       <>    
-
+        <>  
     <Navbar className="navBg" collapseOnSelect expand="lg" bg="gray" variant="gray">
-        <Container>
+        <Container id="container">
             
             <Nav.Link as={Link} to="/" >
+            <Nav.Link id="nav" as={Link} to="/" >
                 <img src="./img/logo.png" width='230'/>
             </Nav.Link>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link as={Link} to="/" >Inicio</Nav.Link>
-                <Nav.Link as={Link} to="/nosotros">Nosotros</Nav.Link>
-                <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>                
+                <Nav.Link id="lista" as={Link} to="/" >Inicio</Nav.Link>
+                <Nav.Link id="lista" as={Link} to="/nosotros">Nosotros</Nav.Link>
+                <Nav.Link id="lista" as={Link} to="/contacto">Contacto</Nav.Link>                
             </Nav>
             </Navbar.Collapse>
         </Container>
@@ -27,7 +26,7 @@ const NavBarExample = () => {
         <Outlet></Outlet>
     </section>
 
-       </> 
+       </>
     )
 }
 export default NavBarExample

@@ -1,16 +1,19 @@
 :root {
     box-sizing: border-box;
+    position: relative;
     margin: 0px;
     padding: 0px;
     background-image:url(../gif/lunaysol.gif);
     background-size: cover;
-    background-position: center 5%;
+    background-repeat: no-repeat;
+    height: 100%;
   }
 
 #Contenedor{
   background-color: transparent;
-  position: absolute;
+  position: relative;
   transform: translate(0%, 0%);
+  margin-top: 150px;
   height: 600px;
   width: 400px;
   border: 2px solid black;
@@ -31,7 +34,7 @@
   
 
 #city{
-  color:rgb(32, 32, 123);
+  color:rgb(45, 18, 248);
   background-color: aliceblue;
   border-radius: 5%;
 }  

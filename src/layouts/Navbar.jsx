@@ -10,7 +10,7 @@ const NavBarExample = () => {
         <Container>
             
             <Nav.Link as={Link} to="/" >
-                <img src="logo.png" width='230'/>
+                <img src="./img/logo.png" width='230'/>
             </Nav.Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

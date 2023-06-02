@@ -3,12 +3,12 @@ import { Outlet, Link, Form } from "react-router-dom"
 
 
 const NavBarExample = () => {
-    return(
+    return (
         <>  
     <Navbar className="navBg" collapseOnSelect expand="lg" bg="gray" variant="gray">
         <Container id="container">
             
-            <Nav.Link as={Link} to="/" >
+            
             <Nav.Link id="nav" as={Link} to="/" >
                 <img src="./img/logo.png" width='230'/>
             </Nav.Link>

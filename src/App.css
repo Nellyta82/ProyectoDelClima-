@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 5vmin);
-  color: white;
+  color: rgb(73, 113, 244);
 }
 
 .App-link {
@@ -37,14 +33,58 @@
   }
 }
 
-section {
-  color: #fff;
-  text-shadow: 4px 4px rgba(56, 70, 73, 0.5);
-  height: 30px;  
+#container{
+  position: fixed;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #82dff8;
+  width: 100%;
+  height: 130px;
+  align-items: center;
 }
+
+#nav img{
+  height: 160px;
+  width: auto;
+  margin-right: 1rem;
+  margin-top: 40px;
+}
+
+#container .me-auto #lista{
+  text-decoration: none;
+  margin: 0 1.5rem;
+  color: aliceblue;
+}
+#container .me-auto #lista:hover{
+  color: green;
+}
+
+
+.nav{
+  text-decoration: none;
+}
+
+section {
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  text-shadow: 4px 4px rgba(56, 70, 73, 0.5);
+  height: 100%;  
+
+}  
 
 
 .me-auto {
   font-size: 35px;
-  text-decoration-color:  white;
+  text-decoration: none;
+  justify-content: space-between;
+  margin-right: 100px;
+  list-style: none;
 }
+
+

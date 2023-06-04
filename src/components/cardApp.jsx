@@ -63,7 +63,7 @@ export function Card() {
     <Container
       id="Contenedor"
       maxWidth="s"
-      sx={{ m: 5 , boxsizing: "border-box" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
+      sx={{ m: 50, boxsizing: "border-box" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
     >
       <Typography
         id="Titulo"

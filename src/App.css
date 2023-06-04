@@ -34,7 +34,6 @@
 }
 
 #container{
-  position: fixed;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
@@ -61,6 +60,23 @@
 }
 #container .me-auto #lista:hover{
   color: green;
+}
+
+#lista > span {
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+#lista{
+  border-top:  rgba(15, 11, 246, 0.826) 0.3rem solid;
+}
+ 
+
+#lista:hover > span {
+  background-color: rgba(20, 20, 200, 0.804);
+  transition: background-color 2s, color 2s;  
+  color: white; 
+  height: 100%;
 }
 
 

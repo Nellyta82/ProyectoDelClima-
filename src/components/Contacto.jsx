@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { Margin } from '@mui/icons-material';
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
@@ -46,17 +47,30 @@ const Contacto = () => {
 
   return (
     <div style={{
+      alignItems:"center",
+      justifyContent:"center",
+      margin:"10px",
+      textShadow:"10px 10px 10px 10px black",
+      fontStyle:"italic",
+      fontWeight:"lighter",
+    }}>
+      <h1>Gracias por visitar "Un Salto al Clima" si quieres suscribirte o dejar alguna sugerencia, por favor llena el siguiente formulario que en la brevedad te responderemos.</h1>
+  
+    <div style={{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh'
+      height: '100vh',
     }}>
       <div style={{
         border: '2px solid black',
         borderRadius: '10px',
         boxShadow: '10px 10px 15px black',
-        padding: '20px',
-        width: '300px'
+        padding: "50px",
+        paddingTop:"5px",
+        width: '300px',
+        margin:"450px",
+        marginTop: "250px",
       }}>
         <h2>Contactanos</h2>
         <div>
@@ -101,6 +115,7 @@ const Contacto = () => {
         <br />
         <button type="submit" onClick={enviarCorreoElectronico}>Enviar</button>
       </div>
+    </div>
     </div>
   );
 };

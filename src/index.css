@@ -1,17 +1,18 @@
-:root {
+body {
     box-sizing: border-box;
-    position: relative;
     margin: 0px;
     padding: 0px;
     background-image:url(../gif/lunaysol.gif);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    width: auto;
+    position: relative; 
   }
 
 #Contenedor{
   background-color: transparent;
-  position: relative;
+  position: fixed;
   transform: translate(0%, 0%);
   margin-top: 10px;
   height: 460px;

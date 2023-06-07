@@ -7,17 +7,19 @@ const Contacto = () => {
   const [telefono, setTelefono] = useState('');
   const [comentario, setComentario] = useState('');
 
-  const enviarCorreoElectronico = () => {
+  const enviarCorreoElectronico = (e) => {
+    e.preventDefault();
+
     const templateParams = {
-      nombre: nombre,
-      email: email,
-      telefono: telefono,
-      comentario: comentario
+      from_name: nombre,
+      from_email: email,
+      from_phone: telefono,
+      message: comentario
     };
 
     emailjs.send('service_gcskx9q', 'template_9stcizt', templateParams, 'I4oNR08EB-DUkDXGx')
-      .then(() => {
-        alert('El correo electrónico ha sido enviado correctamente.');
+      .then((response) => {
+        console.log('Correo electrónico enviado con éxito:', response.status, response.text);
         limpiarCampos();
       })
       .catch((error) => {
@@ -46,67 +48,46 @@ const Contacto = () => {
           border: '2px solid black',
           borderRadius: '10px',
           boxShadow: '10px 10px 15px black',
-          padding: '50px',
-          paddingTop:"5px",
-          width: '300px',
+          padding: '20px',
           margin:"560px",
           marginTop: "400px",
+          maxWidth: '400px',
+          width: '100%'
         }}
       >
+        <h2>Contacto</h2>
         <h2>Gracias por visitar "Un Salto al Clima"</h2>
         <p>Deja tu sugerencia en el siguiente formulario, en breve te responderemos.</p>
-        
-        <form>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="nombre">Nombre y Apellido:</label>
+      
+        <form onSubmit={enviarCorreoElectronico}>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Nombre y Apellido:
             <br />
-            <input
-              type="text"
-              id="nombre"
-              value={nombre}
-              onChange={(e) => setNombre(e.target.value)}
-            />
-          </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="email">Email:</label>
+            <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+          </label>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Email:
             <br />
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="telefono">Teléfono:</label>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </label>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Teléfono:
             <br />
-            <input
-              type="tel"
-              id="telefono"
-              value={telefono}
-              onChange={(e) => setTelefono(e.target.value)}
-            />
-          </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="comentario">Comentario:</label>
+            <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
+          </label>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Comentario:
             <br />
-            <textarea
-              id="comentario"
-              value={comentario}
-              onChange={(e) => setComentario(e.target.value)}
-            ></textarea>
+            <textarea value={comentario} onChange={(e) => setComentario(e.target.value)} />
+          </label>
+          <br />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <button type="submit">Enviar</button>
           </div>
-          <button type="button" onClick={enviarCorreoElectronico}>
-            Enviar
-          </button>
         </form>
       </div>
     </div>
   );
 };
-
-
-
-
 
 export default Contacto;

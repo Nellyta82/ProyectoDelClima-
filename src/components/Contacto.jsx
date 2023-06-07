@@ -46,13 +46,15 @@ const Contacto = () => {
           border: '2px solid black',
           borderRadius: '10px',
           boxShadow: '10px 10px 15px black',
-          padding: '20px',
-          maxWidth: '500px',
-          width: '90%'
+          padding: '50px',
+          paddingTop:"5px",
+          width: '300px',
+          margin:"560px",
+          marginTop: "400px",
         }}
       >
         <h2>Gracias por visitar "Un Salto al Clima"</h2>
-        <p>Deja tu sugerencia en el siguiente formulario, en breve responderemos.</p>
+        <p>Deja tu sugerencia en el siguiente formulario, en breve te responderemos.</p>
         
         <form>
           <div style={{ marginBottom: '10px' }}>
@@ -102,5 +104,9 @@ const Contacto = () => {
     </div>
   );
 };
+
+
+
+
 
 export default Contacto;

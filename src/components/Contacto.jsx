@@ -1,121 +1,104 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Margin } from '@mui/icons-material';
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
-  const [apellido, setApellido] = useState('');
   const [email, setEmail] = useState('');
   const [telefono, setTelefono] = useState('');
   const [comentario, setComentario] = useState('');
 
-  const enviarCorreoElectronico = (e) => {
-    e.preventDefault();
-
-    // Validar que se hayan ingresado los campos requeridos antes de enviar el correo
-    if (nombre.trim() === '' || email.trim() === '' || telefono.trim() === '' || comentario.trim() === '') {
-      alert('Por favor, complete todos los campos requeridos.');
-      return;
-    }
-
-    // Configuración para el envío del correo electrónico utilizando emailjs-com
+  const enviarCorreoElectronico = () => {
     const templateParams = {
-      from_name: `${nombre} ${apellido}`,
+      nombre: nombre,
       email: email,
-      phone: telefono,
-      message: comentario
+      telefono: telefono,
+      comentario: comentario
     };
 
-    // Reemplaza con tu configuración de emailjs-com (User ID, Template ID y Service ID)
-    emailjs.send('service_khdo45b', 'template_o8j77qs', templateParams, 'I4oNR08EB-DUkDXGx')
+    emailjs.send('service_gcskx9q', 'template_9stcizt', templateParams, 'I4oNR08EB-DUkDXGx')
       .then(() => {
-        alert('¡El correo ha sido enviado correctamente!');
+        alert('El correo electrónico ha sido enviado correctamente.');
         limpiarCampos();
       })
       .catch((error) => {
-        console.error('Error al enviar el correo:', error);
+        console.error('Error al enviar el correo electrónico:', error);
       });
   };
 
   const limpiarCampos = () => {
     setNombre('');
-    setApellido('');
     setEmail('');
     setTelefono('');
     setComentario('');
   };
 
   return (
-    <div style={{
-      alignItems:"center",
-      justifyContent:"center",
-      margin:"10px",
-      textShadow:"10px 10px 10px 10px black",
-      fontStyle:"italic",
-      fontWeight:"lighter",
-    }}>
-      <h1>Gracias por visitar "Un Salto al Clima" si quieres suscribirte o dejar alguna sugerencia, por favor llena el siguiente formulario que en la brevedad te responderemos.</h1>
-  
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-    }}>
-      <div style={{
-        border: '2px solid black',
-        borderRadius: '10px',
-        boxShadow: '10px 10px 15px black',
-        padding: "50px",
-        paddingTop:"5px",
-        width: '300px',
-        margin:"450px",
-        marginTop: "250px",
-      }}>
-        <h2>Contactanos</h2>
-        <div>
-          <label htmlFor="nombre">Nombre y Apellido:</label>
-          <br />
-          <input
-            type="text"
-            id="nombre"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <br />
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="telefono">Teléfono:</label>
-          <br />
-          <input
-            type="tel"
-            id="telefono"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="comentario">Comentario:</label>
-          <br />
-          <textarea
-            id="comentario"
-            value={comentario}
-            onChange={(e) => setComentario(e.target.value)}
-          />
-        </div>
-        <br />
-        <button type="submit" onClick={enviarCorreoElectronico}>Enviar</button>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh'
+      }}
+    >
+      <div
+        style={{
+          border: '2px solid black',
+          borderRadius: '10px',
+          boxShadow: '10px 10px 15px black',
+          padding: '20px',
+          maxWidth: '500px',
+          width: '90%'
+        }}
+      >
+        <h2>Gracias por visitar "Un Salto al Clima"</h2>
+        <p>Deja tu sugerencia en el siguiente formulario, en breve responderemos.</p>
+        
+        <form>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="nombre">Nombre y Apellido:</label>
+            <br />
+            <input
+              type="text"
+              id="nombre"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="telefono">Teléfono:</label>
+            <br />
+            <input
+              type="tel"
+              id="telefono"
+              value={telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label htmlFor="comentario">Comentario:</label>
+            <br />
+            <textarea
+              id="comentario"
+              value={comentario}
+              onChange={(e) => setComentario(e.target.value)}
+            ></textarea>
+          </div>
+          <button type="button" onClick={enviarCorreoElectronico}>
+            Enviar
+          </button>
+        </form>
       </div>
-    </div>
     </div>
   );
 };

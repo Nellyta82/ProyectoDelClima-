@@ -9,6 +9,7 @@ const NavBarExample = () => {
         <Container id="container">
             <Nav.Link id="nav" as={Link} to="/" >
                 <img src="./img/logo.png" width='230'/>
+               
             </Nav.Link>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

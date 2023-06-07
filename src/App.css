@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #82dff8;
+  background-color: transparent;
   width: 100%;
   height: 130px;
   align-items: center;

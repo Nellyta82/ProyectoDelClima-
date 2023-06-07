@@ -14,12 +14,13 @@ body {
   background-color: transparent;
   position: fixed;
   transform: translate(0%, 0%);
-  margin-top: 10px;
+  margin-top: 40px;
   height: 460px;
   width: 400px;
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 15px black;
+  margin-left: 550px;
   
 }  
 

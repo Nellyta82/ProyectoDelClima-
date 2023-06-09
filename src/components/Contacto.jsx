@@ -55,7 +55,6 @@ const Contacto = () => {
           width: '100%'
         }}
       >
-        <h2>Contacto</h2>
         <h2>Gracias por visitar "Un Salto al Clima"</h2>
         <p>Deja tu sugerencia en el siguiente formulario, en breve te responderemos.</p>
       

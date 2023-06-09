@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-image:url(../gif/lunaysol.gif);
+    background-image:url(../public/img/arenitaPlayita.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -12,7 +12,7 @@ body {
 
 #Contenedor{
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   transform: translate(0%, 0%);
   margin-top: 40px;
   height: 460px;
@@ -139,8 +139,17 @@ footer {
   
   #container2 button{
       width: 2px;
-      margin-left: 3rem;
+      margin-left: 1rem;
+      margin-right: 3rem;
       height: 35px;
       padding-right: 3rem;
+      margin-top: 30px;
       background-color: black;
+  }
+
+  #titulo-footer{
+    margin-left: 2rem;
+    font-family: 'Shantell Sans', cursive;
+    margin-top: 30px;
+
   }

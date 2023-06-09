@@ -63,11 +63,10 @@
 
 #container .me-auto #lista{
   text-decoration: none;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   color: aliceblue;
-}
-#container .me-auto #lista:hover{
-  color: green;
+  margin-left: 300px;
+  padding-bottom: 10px;
 }
 
 #lista > span {
@@ -77,6 +76,8 @@
 
 #lista{
   border-top:  rgba(15, 11, 246, 0.826) 0.3rem solid;
+  padding: 0px;
+  margin: 0 1rem;
 }
  
 

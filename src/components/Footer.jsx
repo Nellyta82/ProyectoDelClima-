@@ -16,7 +16,7 @@ const Footer = () => {
             <span classpie="mb-3 mb-md-0 text-body-secondary">
               
               
-                <h4>Un salto al Clima</h4>
+                <h4 id='titulo-footer'>Un salto al Clima</h4>
                 </span>
         </div>
         

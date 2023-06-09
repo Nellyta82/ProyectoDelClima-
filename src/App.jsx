@@ -5,13 +5,10 @@ import Contacto from './components/Contacto';
 import Inicio from './components/Inicio';
 import NavBarExample from './layouts/Navbar';
 
-
-
 function App() {
   return (
     <div className="App">
       
-
 <BrowserRouter>
 <Routes>
   <Route path='/' element={ <NavBarExample /> }>

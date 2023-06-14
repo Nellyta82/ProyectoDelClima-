@@ -15,6 +15,7 @@ const Footer = () => {
             </a>
             <span classpie="mb-3 mb-md-0 text-body-secondary">
                 <h4 id='titulo-footer'>Un salto al Clima</h4>
+                <h4 id='derechos'>Derechos Reservados. Copyright © 2023</h4>
             </span>
         </div>
         
@@ -29,9 +30,10 @@ const Footer = () => {
         </div>
         <div id='container2'>
          <ul classpie="nav col-md-4 list-unstyled d-flex">
-            <button><img src="./img/Twitter.jpg" alt="instagram" width='50px' height='50px'/></button>
-            <button><img src="./img/Instagram (2).jpg" alt="instagram" width='50px' height='50px'/></button>
-            <button><img src="./img/Facebook.jpg" alt="instagram" width='50px' height='50px'/></button>  
+            <button> <a href="https://twitter.com/" > <img src="./img/Twitter.jpg" alt="instagram" width='50px' height='50px'/> </a></button>
+            <button>  <a href="https://www.instagram.com/">  <img src="./img/Instagram (2).jpg" alt="instagram" width='50px' height='50px'/> </a></button>
+            <button> <a href="https://www.facebook.com/"> <img src="./img/Facebook.jpg" alt="instagram" width='50px' height='50px'/> </a></button>
+ 
          </ul>
         </div>
 

@@ -1,5 +1,5 @@
 .App{
-  height: 1000px;
+  height: auto;
   
   
 }
@@ -144,7 +144,7 @@ section {
 }
 
 .row{
-  margin-top: 250px;
+  margin-top: 25px;
   margin-bottom: 200px;
 }
 

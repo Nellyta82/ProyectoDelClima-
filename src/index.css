@@ -19,13 +19,17 @@ body {
   background-color: transparent;
   position: absolute;
   transform: translate(0%, 0%);
-  margin-top: 1px;
+  margin-top: 85px;
   height: 365px;
   width: 300px;
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 15px black;
-  margin-left: 200px;
+  margin-left: 800px;
+
+
+
+  
   
 }  
 

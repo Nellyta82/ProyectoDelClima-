@@ -166,6 +166,78 @@ footer {
 
   }
 
+  @media screen and (max-width: 1280px) {
+
+    :root{
+      background-image: none;
+      background-color: black;
+    }
+   
+    #Contenedor{
+      margin-left: 500px;
+      margin-top: 1px;
+    }
+
+    #titulo-footer{
+      margin-top: 1px;
+    }
+    
+
+    #list-footer h6{
+      max-width: 90%;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    #container2 button img{
+      height: 30px;
+      width: 30px;
+    }  
+  }
+
+
+#derechos{
+  font-size: 11px;
+  margin-left: 2rem;
+}
+
+#contacto2{
+  height: 460px;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#contacto2 h2{
+  font-size: 15px;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+#form input{
+  height: 25px;
+}
+
+#contacto2 button{
+  margin-top: 0px;
+  padding-top: 0;
+}
+
+#contacto2 h2:hover{
+  color: springgreen;
+}
+
+#contacto2:hover{
+  color: springgreen;
+}
+
+#contacto2 button:hover{
+  color: springgreen;
+}
+
 
   @media screen and (max-width: 786px) {
 

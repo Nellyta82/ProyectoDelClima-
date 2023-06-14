@@ -63,9 +63,9 @@
 
 #container .me-auto #lista{
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 10px;
   color: aliceblue;
-  margin-left: 300px;
+  margin-left: 250px;
   padding-bottom: 10px;
 }
 
@@ -78,6 +78,7 @@
   border-top:  rgba(15, 11, 246, 0.826) 0.3rem solid;
   padding: 0px;
   margin: 0 1rem;
+  font-size: 25px;
 }
  
 

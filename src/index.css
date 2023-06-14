@@ -3,29 +3,35 @@ body {
     margin: 0px;
     padding: 0px;
     background-image:url(../public/img/arenitaPlayita.jpg);
-    background-size: cover;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     width: auto;
     position: relative; 
+    background-position: inherit;
+  }
+
+  :root{
+    background-color: black;
   }
 
 #Contenedor{
   background-color: transparent;
   position: absolute;
   transform: translate(0%, 0%);
-  margin-top: 40px;
-  height: 460px;
-  width: 400px;
+  margin-top: 1px;
+  height: 365px;
+  width: 300px;
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 15px black;
-  margin-left: 550px;
+  margin-left: 200px;
   
 }  
 
 #box{
   text-shadow: 3px 3px 3px black;
+
 }
 
     
@@ -117,18 +123,20 @@ code {
 
 
 footer {
-  padding: 3px;
-  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  padding: 1px;
+  padding-top: 10px;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: auto;
-  margin-bottom: 0%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   background-color: black;
   width: 100%;
-  height: 150px; 
+  height: 15%; 
 }
 
 #container2{
@@ -143,13 +151,52 @@ footer {
       margin-right: 3rem;
       height: 35px;
       padding-right: 3rem;
-      margin-top: 30px;
+      margin-top: 15px;
       background-color: black;
   }
 
   #titulo-footer{
     margin-left: 2rem;
     font-family: 'Shantell Sans', cursive;
-    margin-top: 30px;
+    margin-top: 10px;
 
+  }
+
+
+  @media screen and (max-width: 786px) {
+
+    :root{
+      background-image: none;
+      background-color: black;
+    }
+   
+    #Contenedor{
+      margin-left: 150px;
+    }
+
+    footer{
+        flex-direction: column; 
+        font-size: 10px; 
+        position: absolute;  
+        height: 1%;
+        align-items: center;
+        bottom: 0;
+    }
+    
+    #titulo-footer{
+      padding-top: 1px;
+      align-items: center;
+  }
+
+    #list-footer h6{
+      max-width: 90%;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+    }
+
+    #container2 button img{
+      height: 30px;
+      width: 30px;
+    }  
   }

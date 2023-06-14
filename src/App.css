@@ -145,6 +145,7 @@ section {
 .row{
   margin-top: 25px;
   margin-bottom: 200px;
+  justify-content: center;
  
 }
 
@@ -155,6 +156,9 @@ section {
 
 }
 
+
+
+  
 
 
 

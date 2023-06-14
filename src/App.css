@@ -130,10 +130,8 @@ section {
 }
 
 
-
-
 .card-img-top{
-  height: 350px;
+  height: 250px;
   width: auto;
   margin-top: 15px;
 }
@@ -141,12 +139,24 @@ section {
 .col-md-4{
   margin-top: 35px;
   margin-bottom: 35px;
+  width: 300px;
 }
 
 .row{
   margin-top: 25px;
   margin-bottom: 200px;
+ 
 }
+
+.card-imag-top-image7{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 300px;
+
+}
+
+
+
 
 
 

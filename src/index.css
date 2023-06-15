@@ -1,3 +1,5 @@
+/* Css página inicio */
+
 body {
     box-sizing: border-box;
     margin: 0px;
@@ -27,9 +29,6 @@ body {
   box-shadow: 10px 10px 15px black;
   margin-left: 800px;
 
-
-
-  
   
 }  
 
@@ -37,8 +36,6 @@ body {
   text-shadow: 3px 3px 3px black;
 
 }
-
-    
 
 #Titulo:hover{
     color: springgreen;
@@ -109,22 +106,7 @@ body {
 }
 
 
-
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+/* css footer */
 
 footer {
   position: fixed;
@@ -166,6 +148,14 @@ footer {
 
   }
 
+  #derechos{
+    font-size: 11px;
+    margin-left: 2rem;
+  }
+
+
+  /* Responsive */
+
   @media screen and (max-width: 1280px) {
 
     :root{
@@ -196,11 +186,7 @@ footer {
     }  
   }
 
-
-#derechos{
-  font-size: 11px;
-  margin-left: 2rem;
-}
+/* css página contacto */
 
 #contacto2{
   height: 460px;
@@ -238,6 +224,7 @@ footer {
   color: springgreen;
 }
 
+/* responsive */
 
   @media screen and (max-width: 786px) {
 
@@ -278,7 +265,4 @@ footer {
   }
 
 
-#derechos{
-  font-size: 11px;
-  margin-left: 2rem;
-}
+

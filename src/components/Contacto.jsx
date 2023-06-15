@@ -35,7 +35,7 @@ const Contacto = () => {
   };
 
   return (
-    <div
+    <div id='contacto1'
       style={{
         display: 'flex',
         justifyContent: 'center',
@@ -43,7 +43,7 @@ const Contacto = () => {
         height: '100vh'
       }}
     >
-      <div
+      <div id='contacto2'
         style={{
           border: '2px solid black',
           borderRadius: '10px',
@@ -58,7 +58,7 @@ const Contacto = () => {
         <h2>Gracias por visitar "Un Salto al Clima"</h2>
         <p>Deja tu sugerencia en el siguiente formulario, en breve te responderemos.</p>
       
-        <form onSubmit={enviarCorreoElectronico}>
+        <form id='form' onSubmit={enviarCorreoElectronico}>
           <label style={{ display: 'block', marginBottom: '10px' }}>
             Nombre y Apellido:
             <br />

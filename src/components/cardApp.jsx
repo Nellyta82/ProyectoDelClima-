@@ -63,11 +63,11 @@ export function Card() {
     <Container
       id="Contenedor"
       maxWidth="s"
-      sx={{ m: 50, boxsizing: "border-box" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
+      sx={{ m: 0, gap: 0, paddingTop: 0, boxsizing: "border-box" , alignItems:"center" , justifyContent:"center" , textAlign:"center" }}
     >
       <Typography
         id="Titulo"
-        variant="h4"
+        variant="h5"
         component="h1"
         align="center"
         color="white"
@@ -79,7 +79,7 @@ export function Card() {
         Un Salto al Clima 
       </Typography>
       <Box
-        sx={{ display: "grid", gap: 1 , paddingTop: 1 , justifyContent:"center" , alignItems:"center" , background:"transparent" }}
+        sx={{ display: "grid", gap: 0.5 , paddingTop: 0 , justifyContent:"center" , alignItems:"center" , background:"transparent" }}
         component="form"
         autoComplete="off"
         onSubmit={onSubmit}
@@ -115,9 +115,9 @@ export function Card() {
         <Box
           id="box"
           sx={{
-            mt: 1,
+            mt: 0,
             display: "grid",
-            gap: 1,
+            gap: 0,
             textAlign: "center",
             color:"white",
             
@@ -125,8 +125,8 @@ export function Card() {
         >
           <Typography 
             id="ciudad"
-            variant="h5"
-            component="h5"
+            variant="h6"
+            component="h6"
             color="white"
           >
             {weather.city}, {weather.country}
@@ -140,28 +140,28 @@ export function Card() {
           />
           <Typography
             id="temperatura"
-            variant="h4"
-            component="h3"
+            variant="h6"
+            component="h6"
           >
             {weather.temperature} °C
           </Typography>
           <Typography
             id="condicion"
-            variant="h5"
-            component="h5"
+            variant="h6"
+            component="h6"
           >
             {weather.conditionText} 
           </Typography>
           <Typography
             id="sensacion"
-            variant="h5"
-            component="h5"
+            variant="h6"
+            component="h6"
           >
            sensación térmica {weather.realFeel} °C 
           </Typography>
           <Typography
             id="humedad"
-            variant="h5"
+            variant="h6"
             component="h6"
           >
             {weather.humidity} % hunedad relativa
@@ -172,7 +172,7 @@ export function Card() {
       <Typography
         id="sello"
         textAlign="center"
-        sx={{ mt: 1, fontSize: "15px" }}
+        sx={{ mt: 0, fontSize: "12px" }}
       >
         Powered by:{" "}
         <a

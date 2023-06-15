@@ -1,5 +1,5 @@
 .App{
-  height: auto;
+  height: 1000px;
   
   
 }
@@ -63,9 +63,9 @@
 
 #container .me-auto #lista{
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 1rem;
   color: aliceblue;
-  margin-left: 250px;
+  margin-left: 300px;
   padding-bottom: 10px;
 }
 
@@ -78,7 +78,6 @@
   border-top:  rgba(15, 11, 246, 0.826) 0.3rem solid;
   padding: 0px;
   margin: 0 1rem;
-  font-size: 25px;
 }
  
 
@@ -129,9 +128,9 @@ section {
 #btn{
   border: #282c34 solid;
   background-color: blue;
-  color: white;
-  padding: 10px 20px;
+  color: hsl(0, 0%, 100%);
 }
+ 
 
 /*#container #lista1{
   text-decoration: none;
@@ -156,40 +155,5 @@ section {
   justify-content: center;
   align-items: center;
 }77
-
-.card-img-top{
-  height: 250px;
-  width: auto;
-  margin-top: 15px;
-}
-
-.col-md-4{
-  margin-top: 35px;
-  margin-bottom: 35px;
-  width: 300px;
-}
-
-.row{
-  margin-top: 25px;
-  margin-bottom: 200px;
-  justify-content: center;
- 
-}
-
-.card-imag-top-image7{
-  margin-top: 35px;
-  margin-bottom: 35px;
-  width: 300px;
-
-}
-
-
-
-  
-
-
-
-
-
 
 

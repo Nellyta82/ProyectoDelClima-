@@ -12,6 +12,7 @@ import image7 from '../assets/image7.jpg'
 
 
 const Nosotros = () => {
+
     const Cardsdata = [
         
 
@@ -23,7 +24,7 @@ const Nosotros = () => {
   },
   {
     id: 2,
-    title: "Jeskarlet",
+    title: "Jeskarlet Achique",
     image: image2,
     url: "https://github.com/jeskarlet",
   },

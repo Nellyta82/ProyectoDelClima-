@@ -112,8 +112,21 @@ section {
   margin-top: 30px;
   margin-bottom: 200px;
   width: 300px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
 
-}
+  .overflow{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+
+  .overflow:hover{
+    padding: 30px;
+  }
+
 .div-centralizada {
   display: flex;
   justify-content: center;

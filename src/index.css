@@ -1,13 +1,13 @@
-/* Css página inicio */
+/* Css del body de la página */
 
 body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-image:url(../public/img/arenitaPlayita.jpg);
+    background-image:url(../img/arenitaPlayita.jpg);
     background-size: 100% 100vh;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 85vh;
     width: auto;
     position: relative; 
     background-position: inherit;
@@ -16,6 +16,8 @@ body {
   :root{
     background-color: black;
   }
+
+  /* Css página inicio */
 
 #Contenedor{
   background-color: transparent;
@@ -122,7 +124,7 @@ footer {
   padding-bottom: 0px;
   background-color: black;
   width: 100%;
-  height: 15%; 
+  height: 15vh; 
 }
 
 #container2{
@@ -152,40 +154,7 @@ footer {
     font-size: 11px;
     margin-left: 2rem;
   }
-
-
-  /* Responsive */
-
-  @media screen and (max-width: 1280px) {
-
-    :root{
-      background-image: none;
-      background-color: black;
-    }
-   
-    #Contenedor{
-      margin-left: 500px;
-      margin-top: 1px;
-    }
-
-    #titulo-footer{
-      margin-top: 1px;
-    }
-    
-
-    #list-footer h6{
-      max-width: 90%;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
-
-    #container2 button img{
-      height: 30px;
-      width: 30px;
-    }  
-  }
-
+ 
 /* css página contacto */
 
 #contacto2{
@@ -226,24 +195,48 @@ footer {
 
 /* responsive */
 
+@media screen and (min-width: 790px) and (max-width: 1280px) {
+
+  :root{
+    background-image: none;
+    background-color: black;
+  }
+ 
+  #Contenedor{
+    margin-left: 500px;
+    margin-top: 1px;
+  }
+
+  #titulo-footer{
+    margin-top: 1px;
+  }
+  
+
+  #list-footer h6{
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  #container2 button img{
+    height: 30px;
+    width: 30px;
+  }  
+}
+
   @media screen and (max-width: 786px) {
 
-    :root{
-      background-image: none;
-      background-color: black;
-    }
-   
     #Contenedor{
       margin-left: 150px;
+      margin-top: 20px;
     }
 
-    footer{
-        flex-direction: column; 
-        font-size: 10px; 
-        position: absolute;  
-        height: 1%;
+    footer{ 
+        font-size: 10px;   
         align-items: center;
         bottom: 0;
+        margin-bottom: 0;
     }
     
     #titulo-footer{
@@ -259,10 +252,30 @@ footer {
     }
 
     #container2 button img{
-      height: 30px;
-      width: 30px;
+      height: 20px;
+      width: 20px;
     }  
   }
+
+  @media screen and (max-width: 420px) {
+
+    #Contenedor{
+      margin-left: 10px;
+      margin-top: 50px;
+    }
+
+    footer{
+
+      bottom: 0;
+    }
+
+    #titulo-footer{
+      font-size: 10px;
+  } 
+
+}
+
+
 
 
 

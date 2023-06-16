@@ -39,6 +39,15 @@
   margin-top: 40px;
 }
 
+#nav img:hover{
+  border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-transform: rotate(300deg); transform: rotate(300deg);
+}
+
+
 #container .me-auto #lista{
   text-decoration: none;
   margin: 0;
@@ -112,8 +121,21 @@ section {
   margin-top: 30px;
   margin-bottom: 200px;
   width: 300px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
 
-}
+  .overflow{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+
+  .overflow:hover{
+    padding: 30px;
+  }
+
 .div-centralizada {
   display: flex;
   justify-content: center;
@@ -127,6 +149,7 @@ section {
   color: white;
   padding: 10px;
 }
+
 
 
 /* Css página ppal */

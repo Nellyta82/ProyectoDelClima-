@@ -132,17 +132,37 @@ section {
 
 /* Css página ppal */
 
-#btn{
-  border: #282c34 solid;
-  background-color: blue;
-  color: hsl(0, 0%, 100%);
+#nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: rgb(201, 138, 22);
 }
 
-#tt2{
-  height: 1300px;
+#principal-title{
+  text-align: center;
+}
 
+#luna img{
+  align-items: center;
+  margin-left: 1000px;
+}
+
+#luna #punto{
+  font-size: 20px;
+  margin-left: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#principal-text{
+  font-size: 25px;
+  text-align: justify;
+  padding-left: 400px;
+  padding-right: 400px;
+  background-color: rgba(73, 83, 105, 0.541);
 }
  
+<<<<<<< HEAD
 /* responsive */
 
 @media screen and (min-width: 790px) and (max-width: 1280px) {
@@ -196,3 +216,5 @@ section {
 }77
 
 
+=======
+>>>>>>> 421e44154bd8feac517350988aeaf291d04a2121

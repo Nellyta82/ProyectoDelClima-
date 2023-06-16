@@ -14,8 +14,7 @@ import image7 from '../assets/image7.jpg'
 const Nosotros = () => {
 
     const Cardsdata = [
-        
-
+      
   {
     id: 1,
     title: "Ingrid Cepeda",

@@ -291,30 +291,9 @@ section {
 
 }
 
-
-
-/*#container #lista1{
-  text-decoration: none;
-  color: rgb(255, 145, 0);
-  margin-left: 250px;
-  margin-top: 5px;
-  font-size: calc(20px + 3vmin);
-  flex-direction: row;
-  justify-content: space-around;
+#luna{
+  height: 1800px;
 }
 
-#principal{
-  text-align: center;
-  font-style: italic;
-  font-size: 80px;
-}
-
-#tt2 img{
-  margin-left: 200px;
-  height: 350px;
-  width: 400px;
-  justify-content: center;
-  align-items: center;
-}77
 
 

@@ -69,6 +69,13 @@ const Nosotros = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center h-100">
       <div className="row">
+        <div class="div-centralizada" > <h3>Un Salto al Clima</h3> </div>
+        <div class= "div-justificada"> <h4>Es un medio digital centrado en informar sobre las últimas novedades en el clima, brindar información y pronósticos meteorológicos, 
+        prospectivas climáticas y alertas en su área de incumbencia, basados en el monitoreo continuo de la atmósfera y en el conocimiento científico, con el objeto de proteger a la población, 
+        contribuir a la defensa nacional, favorecer el desarrollo sustentable y dar cumplimiento a sus compromisos internacionales en la materia.
+        <br /> <br /> 
+        Actualmente, Un Salto al Clima está conformado por un equipo de programadoras
+         centradas en el mundo web, donde se producen análisis y comparativas sobre nuevas actualizaciones a la página.</h4></div>
         {Cardsdata.map(({ title, image, url, id }) => (
           <div className="col-md-4" key={id}>
             <Tarjeta imageSource={image} title={title} url={url} />

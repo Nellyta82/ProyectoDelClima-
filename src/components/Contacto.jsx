@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+
+import emailjs from 'emailjs-com'
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from "react"
 
 const Contacto = () => {
   const [nombre, setNombre] = useState('');
@@ -7,85 +9,112 @@ const Contacto = () => {
   const [telefono, setTelefono] = useState('');
   const [comentario, setComentario] = useState('');
 
-  const enviarCorreoElectronico = (e) => {
-    e.preventDefault();
+  const handleChangeInput = (event) => {
+    const { name, value } = event.target;
+    if (name === 'nombre') {
+      setNombre(value.replace(/[^a-zA-Z\s]/g, ''));
+    } else if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'telefono') {
+      setTelefono(value.replace(/[^0-9]/g, ''));
+    }
+  };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Aquí se implementaría la lógica real para enviar el correo electrónico
     const templateParams = {
       from_name: nombre,
       from_email: email,
-      from_phone: telefono,
-      message: comentario
+      from_telefono: telefono,
+      message: comentario,
     };
 
-    emailjs.send('service_gcskx9q', 'template_9stcizt', templateParams, 'I4oNR08EB-DUkDXGx')
+    emailjs
+      .send(
+        'service_ds9xwtd',
+        'template_cewmib4',
+        templateParams,
+        '4-Fav4iv9QqYl4Tda'
+      )
+
       .then((response) => {
-        console.log('Correo electrónico enviado con éxito:', response.status, response.text);
-        limpiarCampos();
+        console.log('Correo electrónico enviado con éxito:', response);
+        // Limpiar los campos después de enviar el correo
+        setNombre('');
+        setEmail('');
+        setTelefono('');
+        setComentario('');
       })
       .catch((error) => {
         console.error('Error al enviar el correo electrónico:', error);
       });
   };
-
-  const limpiarCampos = () => {
-    setNombre('');
-    setEmail('');
-    setTelefono('');
-    setComentario('');
-  };
-
   return (
-    <div id='contacto1'
+
+   <form
+      className="contact-form"
       style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh'
+        height: '100vh',
+        border: '2px solid black',
+        borderRadius: '10px',
+        boxShadow: '10px 10px 10px 15px black',
+        padding: "20px",
+        paddingTop: "10px",
+        marginLeft: '250',
+        maxWidth: '400px',
+        margin: "560px",
+        Width: '600px',
+        marginTop: "10px",
       }}
+      onSubmit={handleSubmit}
     >
-      <div id='contacto2'
-        style={{
-          border: '2px solid black',
-          borderRadius: '10px',
-          boxShadow: '10px 10px 15px black',
-          padding: '20px',
-          margin:"560px",
-          marginTop: "400px",
-          maxWidth: '400px',
-          width: '100%'
-        }}
-      >
-        <h2>Gracias por visitar "Un Salto al Clima"</h2>
-        <p>Deja tu sugerencia en el siguiente formulario, en breve te responderemos.</p>
-      
-        <form id='form' onSubmit={enviarCorreoElectronico}>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
-            Nombre y Apellido:
-            <br />
-            <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-          </label>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
-            Email:
-            <br />
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
-            Teléfono:
-            <br />
-            <input type="tel" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
-          </label>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
-            Comentario:
-            <br />
-            <textarea value={comentario} onChange={(e) => setComentario(e.target.value)} />
-          </label>
-          <br />
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
+      <h2>Gracias por visitar Un Salto al Clima</h2>
+      <p>Deja una sugerencia en el siguiente formulario:</p>
+
+      <div>
+        <h3>Nombre y Apellido</h3>
+        <input
+          type="text"
+          name="nombre"
+          value={nombre}
+          onChange={handleChangeInput}
+          pattern="[A-Za-z\s]+"
+          required />
       </div>
+
+      <div>
+        <h3>Email</h3>
+        <input
+          type="email"
+          name="email"
+          value={email}
+          onChange={handleChangeInput}
+          required />
+      </div>
+
+      <div>
+        <h3>Teléfono</h3>
+      <input
+        type="tel"
+        name="telefono"
+        value={telefono}
+        onChange={handleChangeInput}
+        pattern="[0-9]+"
+        required />
     </div>
+    <div>
+        <h3>Comentario</h3>
+        <textarea
+          name="comentario"
+          value={comentario}
+          onChange={(event) => setComentario(event.target.value)}
+          required
+        ></textarea>
+      </div>
+      <button type="submit">ENVIAR</button>
+      </form>
   );
 };
 

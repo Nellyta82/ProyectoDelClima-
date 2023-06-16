@@ -132,40 +132,33 @@ section {
 
 /* Css página ppal */
 
-#btn{
-  border: #282c34 solid;
-  background-color: blue;
-  color: hsl(0, 0%, 100%);
+#nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: rgb(201, 138, 22);
 }
 
-#tt2{
-  height: 1300px;
+#principal-title{
+  text-align: center;
+}
 
+#luna img{
+  align-items: center;
+  margin-left: 1000px;
+}
+
+#luna #punto{
+  font-size: 20px;
+  margin-left: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#principal-text{
+  font-size: 25px;
+  text-align: justify;
+  padding-left: 400px;
+  padding-right: 400px;
+  background-color: rgba(73, 83, 105, 0.541);
 }
  
-
-/*#container #lista1{
-  text-decoration: none;
-  color: rgb(255, 145, 0);
-  margin-left: 250px;
-  margin-top: 5px;
-  font-size: calc(20px + 3vmin);
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#principal{
-  text-align: center;
-  font-style: italic;
-  font-size: 80px;
-}
-
-#tt2 img{
-  margin-left: 200px;
-  height: 350px;
-  width: 400px;
-  justify-content: center;
-  align-items: center;
-}77
-
-

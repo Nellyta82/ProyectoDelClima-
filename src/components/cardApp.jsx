@@ -157,14 +157,14 @@ export function Card() {
             variant="h6"
             component="h6"
           >
-           sensación térmica {weather.realFeel} °C 
+           Sensación Térmica {weather.realFeel} °C 
           </Typography>
           <Typography
             id="humedad"
             variant="h6"
             component="h6"
           >
-            {weather.humidity} % hunedad relativa
+            {weather.humidity} % Humedad Relativa
           </Typography>
         </Box>
       )}

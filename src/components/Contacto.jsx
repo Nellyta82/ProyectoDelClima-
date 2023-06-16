@@ -73,7 +73,6 @@ const Contacto = () => {
     
     
   return (
-
    <form
       className="contact-form"
       style={{
@@ -91,8 +90,8 @@ const Contacto = () => {
       }}
       onSubmit={handleSubmit}
     >
-      <h2>Gracias por visitar Un Salto al Clima</h2>
-      <p>Deja una sugerencia en el siguiente formulario:</p>
+      <h2>Gracias por Visitarnos</h2>
+      <p>Puedes dejar una sugerencia en el siguiente formulario:</p>
 
       <div>
         <h3>Nombre y Apellido</h3>

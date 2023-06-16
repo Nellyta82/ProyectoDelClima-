@@ -23,7 +23,7 @@ body {
   background-color: transparent;
   position: absolute;
   transform: translate(0%, 0%);
-  margin-top: 85px;
+  margin-top: 0px;
   height: 365px;
   width: 300px;
   border: 2px solid black;
@@ -203,8 +203,9 @@ footer {
   }
  
   #Contenedor{
-    margin-left: 500px;
+    margin-left: 400px;
     margin-top: 1px;
+    height: 365px;
   }
 
   #titulo-footer{
@@ -225,18 +226,12 @@ footer {
   }  
 }
 
-  @media screen and (max-width: 786px) {
+  @media screen and (min-width: 425px) and (max-width: 786px) {
 
     #Contenedor{
-      margin-left: 150px;
+      margin-left: 80px;
       margin-top: 20px;
-    }
-
-    footer{ 
-        font-size: 10px;   
-        align-items: center;
-        bottom: 0;
-        margin-bottom: 0;
+      height: 300px;
     }
     
     #titulo-footer{
@@ -257,21 +252,33 @@ footer {
     }  
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (min-width: 320px) and (max-width: 420px) {
 
     #Contenedor{
       margin-left: 10px;
       margin-top: 50px;
-    }
-
-    footer{
-
-      bottom: 0;
+      height: 365px;
     }
 
     #titulo-footer{
-      font-size: 10px;
+      font-size: 15px;
+      align-items: center;
+    justify-content: center;
+
   } 
+
+  #list-footer h6{
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  #container2 button img{
+    height: 15px;
+    width: 15px;
+  }  
 
 }
 

@@ -1,4 +1,3 @@
-
 import emailjs from 'emailjs-com'
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react"
@@ -50,7 +49,29 @@ const Contacto = () => {
       .catch((error) => {
         console.error('Error al enviar el correo electrónico:', error);
       });
-  };
+
+
+      // Guardar la información del cliente en json-server
+      fetch('http://localhost:5000/clientes', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          nombre: nombre,
+          email: email,
+          telefono: telefono,
+          comentario: comentario,
+        }),
+      })
+        .then((response) => {
+          console.log('Cliente guardado en json-server:', response);
+        })
+
+      }
+       
+    
+    
   return (
 
    <form
@@ -117,5 +138,7 @@ const Contacto = () => {
       </form>
   );
 };
+
+
 
 export default Contacto;

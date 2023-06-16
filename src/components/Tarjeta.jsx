@@ -18,7 +18,7 @@ function Tarjeta({ imageSource, title, text, url }) {
         <a
           href={url ? url : "#!"}
           target="_blank"
-          className="btn btn-outline-secondary border-4"
+          className="btn btn-outline-secondary border-2"
           rel="noreferrer"
         >
           GitHub {title}

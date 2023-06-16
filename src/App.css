@@ -115,6 +115,19 @@ section {
   width: 300px;
 
 }
+.div-centralizada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.div-justificada {
+  display: flex;
+  text-align:justify;
+  background-color: rgba(73, 83, 105, 0.541);
+  color: white;
+  padding: 10px;
+}
 
 
 /* Css página ppal */

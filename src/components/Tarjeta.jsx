@@ -13,7 +13,7 @@ function Tarjeta({ imageSource, title, text, url }) {
         <p className="card-text text-secondary">
           {text
             ? text
-            : "Programadoras Full Stack"}
+            : "Programadora Full Stack"}
         </p>
         <a
           href={url ? url : "#!"}

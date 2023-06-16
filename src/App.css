@@ -166,14 +166,19 @@ section {
 
 #luna img{
   align-items: center;
-  margin-left: 1000px;
+  margin-left: 750px;
 }
 
 #luna #punto{
-  font-size: 20px;
-  margin-left: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 30px;
+  margin-left: 865px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding: 20px;
+  background-color:  rgba(220, 223, 227, 0.781);
+  text-decoration-line: none;
+  
+ 
 }
 #principal-text{
   font-size: 25px;
@@ -181,6 +186,9 @@ section {
   justify-content: center;
   margin: 20px;
   background-color: rgba(73, 83, 105, 0.541);
+  margin-left: 150px;
+  margin-right: 150px;
+  
 }
  
 /* responsive */

@@ -23,7 +23,6 @@
 #container{
   text-decoration: none;
   margin: 0px;
-  padding: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,9 +41,9 @@
 
 #container .me-auto #lista{
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0;
   color: aliceblue;
-  margin-left: 300px;
+  margin-left: 100px;
   padding-bottom: 10px;
 }
 
@@ -103,7 +102,7 @@ section {
 }
 
 .row{
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 200px;
   justify-content: center;
  
@@ -134,13 +133,35 @@ section {
 
 #nav {
   display: flex;
-  flex-direction: row;
   font-size: 30px;
   color: rgb(201, 138, 22);
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+#nav #lista1{
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: 'Satisfy', cursive;
+  
+}
+
+#nav #lista1:hover{
+  color: blue;
 }
 
 #principal-title{
   text-align: center;
+  margin-top: 10px;
+}
+
+#luna{
+
+  margin-top: 30px;
 }
 
 #luna img{
@@ -157,12 +178,11 @@ section {
 #principal-text{
   font-size: 25px;
   text-align: justify;
-  padding-left: 400px;
-  padding-right: 400px;
+  justify-content: center;
+  margin: 20px;
   background-color: rgba(73, 83, 105, 0.541);
 }
  
-<<<<<<< HEAD
 /* responsive */
 
 @media screen and (min-width: 790px) and (max-width: 1280px) {
@@ -171,21 +191,95 @@ section {
     width: 70%;
   }
 
+  #principal-text{
+    width: 70%;
+    padding-left: 40px;
+    padding: 10px;
+    margin-left: 80px;   
+}
+
+#luna img{
+  margin-left: 140px;
+}
+
+#luna #punto{
+  margin-left: 300px;
+}
 }
 
 @media screen and (min-width: 425px) and (max-width: 786px) {
 
+  #container .me-auto #lista{
+    font-size: 20px;
+  }
+
+  .row{
+    margin-top: 100px;
+  }
+
   .div-justificada{
     width: 60%;
   }
+
+  #nav #lista1{
+    margin-top: 20px;
+  }
+
+  #principal-text{
+    width: 70%;
+    padding-left: 40px;
+    padding: 10px;
+    margin-left: 80px;   
+}
+
+#luna img{
+  margin-left: 40px;
+}
+
+#luna #punto{
+  margin-left: 300px;
+}
 
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
 
+  #container .me-auto #lista{
+    font-size: 15px;
+  }
+
+  .row{
+    margin-top: 120px;
+  }
+
   .div-justificada{
     width: 60%;
   }
+
+  #nav #lista1{
+    margin-top: 15px;
+  }
+
+  #principal-title{
+    margin-top: 50px;
+  }
+
+  #principal-text{
+    width: 70%;
+    padding-left: 10px;
+    padding: 10px;
+    margin-left: 10px;  
+    font-size: 15px; 
+}
+
+#luna img{
+  margin-left: 10px;
+  width: 200px;
+}
+
+#luna #punto{
+  margin-left: 100px;
+}
 
 }
 
@@ -216,5 +310,3 @@ section {
 }77
 
 
-=======
->>>>>>> 421e44154bd8feac517350988aeaf291d04a2121

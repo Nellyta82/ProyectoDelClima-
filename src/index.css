@@ -181,13 +181,14 @@ footer {
  
   #Contenedor{
     margin-left: 400px;
-    margin-top: 1px;
+    margin-top: 80px;
     height: 365px;
   }
 
   .contact-form{
     width: 500px;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin: 50px;
   }
 
   #titulo-footer{
@@ -216,13 +217,14 @@ footer {
 
     #Contenedor{
       margin-left: 80px;
-      margin-top: 20px;
+      margin-top: 100px;
       height: 300px;
     }
 
     .contact-form{
       width: 500px;
-      margin-left: 10px;
+      margin-left: 50px;
+      margin: 50px;
     }
     
     #titulo-footer{
@@ -251,7 +253,7 @@ footer {
 
     #Contenedor{
       margin-left: 10px;
-      margin-top: 50px;
+      margin-top: 120px;
       height: 365px;
     }
 

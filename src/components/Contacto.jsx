@@ -62,11 +62,11 @@ const Contacto = () => {
         boxShadow: '10px 10px 10px 15px black',
         padding: "20px",
         paddingTop: "10px",
-        marginLeft: '250',
+        marginLeft: '100px',
         maxWidth: '400px',
-        margin: "560px",
+        margin: "100px",
         Width: '600px',
-        marginTop: "10px",
+        marginTop: "100px",
       }}
       onSubmit={handleSubmit}
     >

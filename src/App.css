@@ -135,8 +135,9 @@ section {
 #nav {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(201, 138, 22);
+  text-align: center;
 }
 
 #principal-title{
@@ -145,14 +146,19 @@ section {
 
 #luna img{
   align-items: center;
-  margin-left: 1000px;
+  margin-left: 750px;
 }
 
 #luna #punto{
-  font-size: 20px;
-  margin-left: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 30px;
+  margin-left: 865px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding: 20px;
+  background-color:  rgba(220, 223, 227, 0.781);
+  text-decoration-line: none;
+  
+ 
 }
 #principal-text{
   font-size: 25px;
@@ -160,61 +166,16 @@ section {
   padding-left: 400px;
   padding-right: 400px;
   background-color: rgba(73, 83, 105, 0.541);
+  margin-left: 150px;
+  margin-right: 150px;
+  
 }
  
-<<<<<<< HEAD
-/* responsive */
-
-@media screen and (min-width: 790px) and (max-width: 1280px) {
-
-  .div-justificada{
-    width: 70%;
-  }
-
+#luna{
+  height: 1800px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 786px) {
-
-  .div-justificada{
-    width: 60%;
-  }
-
+#lista1{
+  margin-top: 45px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
-
-  .div-justificada{
-    width: 60%;
-  }
-
-}
-
-
-
-/*#container #lista1{
-  text-decoration: none;
-  color: rgb(255, 145, 0);
-  margin-left: 250px;
-  margin-top: 5px;
-  font-size: calc(20px + 3vmin);
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#principal{
-  text-align: center;
-  font-style: italic;
-  font-size: 80px;
-}
-
-#tt2 img{
-  margin-left: 200px;
-  height: 350px;
-  width: 400px;
-  justify-content: center;
-  align-items: center;
-}77
-
-
-=======
->>>>>>> 421e44154bd8feac517350988aeaf291d04a2121

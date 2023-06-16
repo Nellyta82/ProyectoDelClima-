@@ -179,7 +179,7 @@ section {
 
 #principal-title{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 #luna{
@@ -316,6 +316,18 @@ section {
 
 #luna{
   height: 1800px;
+}
+
+
+
+/*#container #lista1{
+  text-decoration: none;
+  color: rgb(255, 145, 0);
+  margin-left: 250px;
+  margin-top: 5px;
+  font-size: calc(20px + 3vmin);
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 

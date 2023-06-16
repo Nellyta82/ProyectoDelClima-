@@ -56,7 +56,7 @@ const Contacto = () => {
    <form
       className="contact-form"
       style={{
-        height: '100vh',
+        height: '500px',
         border: '2px solid black',
         borderRadius: '10px',
         boxShadow: '10px 10px 10px 15px black',

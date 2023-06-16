@@ -157,39 +157,16 @@ footer {
  
 /* css página contacto */
 
-#contacto2{
-  height: 460px;
-  max-width: 600px;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
-  font-size: 14px;
-}
 
-#contacto2 h2{
-  font-size: 15px;
-  padding-top: 0px;
-  margin-top: 0;
-}
-
-#form input{
-  height: 25px;
-}
-
-#contacto2 button{
-  margin-top: 0px;
-  padding-top: 0;
-}
-
-#contacto2 h2:hover{
+.contact-form h2:hover{
   color: springgreen;
 }
 
-#contacto2:hover{
+.contact-form:hover{
   color: springgreen;
 }
 
-#contacto2 button:hover{
+.contact-form button:hover{
   color: springgreen;
 }
 
@@ -206,6 +183,11 @@ footer {
     margin-left: 400px;
     margin-top: 1px;
     height: 365px;
+  }
+
+  .contact-form{
+    width: 500px;
+    margin-left: 10px;
   }
 
   #titulo-footer{
@@ -228,10 +210,19 @@ footer {
 
   @media screen and (min-width: 425px) and (max-width: 786px) {
 
+    body{
+      background-size: 100% 100%;
+    }
+
     #Contenedor{
       margin-left: 80px;
       margin-top: 20px;
       height: 300px;
+    }
+
+    .contact-form{
+      width: 500px;
+      margin-left: 10px;
     }
     
     #titulo-footer{
@@ -253,11 +244,22 @@ footer {
   }
 
   @media screen and (min-width: 320px) and (max-width: 420px) {
+    
+    body{
+      background-size: 100% 100%;
+    }
 
     #Contenedor{
       margin-left: 10px;
       margin-top: 50px;
       height: 365px;
+    }
+
+    .contact-form{
+      width: 500px;
+      margin-left: 10px;
+      padding-left: 10px;
+      margin: 10px;
     }
 
     #titulo-footer{

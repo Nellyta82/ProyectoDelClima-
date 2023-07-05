@@ -4,9 +4,9 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-image:url(../public/img/arenitaPlayita.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-image:url(../public/img/estrellas.gif);
+    background-size: 100% cover;
+    background-repeat: repeat;
     height: 115vh;
     width: auto;
     position: relative; 
@@ -14,6 +14,9 @@ body {
   }
 
   :root{
+    background-image: url(../public/img/estrellas.gif);
+    background-size: 100% cover;
+    background-repeat: repeat;
     background-color: black;
   }
 
@@ -188,16 +191,6 @@ footer {
 
 @media screen and (min-width: 790px) and (max-width: 1280px) {
 
-  :root{
-    background-color: black;
-  }
-  
-  body{
-    background-color: black;
-    background-image: none;
-    height: 0px;
-  }
- 
   #Contenedor{
     margin-left: 400px;
     margin-top: 80px;
@@ -250,13 +243,6 @@ footer {
 }
 
   @media screen and (min-width: 425px) and (max-width: 786px) {
-
-
-    body{
-      background-color: black;
-      background-image: none;
-      height: 0px;
-    }
 
     #Contenedor{
       margin-left: 80px;
@@ -324,12 +310,6 @@ footer {
 
   @media screen and (min-width: 200px) and (max-width: 420px) {
     
-    body{
-      background-color: black;
-      background-image: none;
-      height: 0px;
-    }
-
     #Contenedor{
       margin-left: 50px;
       margin-top: 120px;

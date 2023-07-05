@@ -76,25 +76,25 @@ const Contacto = () => {
    <form
       className="contact-form"
       style={{
-        height: '500px',
+        position: 'absolute',
+        height: '480px',
         border: '2px solid black',
         borderRadius: '10px',
         boxShadow: '10px 10px 10px 15px black',
-        padding: "20px",
+        padding: "10px",
         paddingTop: "10px",
-        marginLeft: '100px',
-        maxWidth: '400px',
-        margin: "100px",
-        Width: '600px',
-        marginTop: "100px",
+        marginLeft: '50px',
+        margin: "50px",
+        Width: '300px',
+        marginTop: "80px",
       }}
       onSubmit={handleSubmit}
     >
-      <h2>Gracias por Visitarnos</h2>
+      <h3>Gracias por Visitarnos</h3>
       <p>Puedes dejar una sugerencia en el siguiente formulario:</p>
 
       <div>
-        <h3>Nombre y Apellido</h3>
+        <h4>Nombre y Apellido</h4>
         <input
           type="text"
           name="nombre"
@@ -105,7 +105,7 @@ const Contacto = () => {
       </div>
 
       <div>
-        <h3>Email</h3>
+        <h4>Email</h4>
         <input
           type="email"
           name="email"
@@ -115,7 +115,7 @@ const Contacto = () => {
       </div>
 
       <div>
-        <h3>Teléfono</h3>
+        <h4>Teléfono</h4>
       <input
         type="tel"
         name="telefono"
@@ -125,7 +125,7 @@ const Contacto = () => {
         required />
     </div>
     <div>
-        <h3>Comentario</h3>
+        <h4>Comentario</h4>
         <textarea
           name="comentario"
           value={comentario}

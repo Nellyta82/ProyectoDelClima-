@@ -3,8 +3,6 @@
   
 }
 
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -81,21 +79,57 @@ box-shadow: 0px 0px 15px 15px #ec731e;
 }
 
 section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 0px;
-  margin: 0px;
   color: white;
-  text-shadow: 4px 4px rgba(56, 70, 73, 0.5);
-  height: 100%;  
+  text-shadow: 4px 4px rgba(56, 70, 73, 0.5);  
+  margin: 20px;
 }  
 
 
 .me-auto {
+  height: 170px;
+  width: 100%;
   font-size: 35px;
   text-decoration: none;
   justify-content: space-between;
   list-style: none;
 }
 
+#links{
+   
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#lista{
+  margin-top: 2rem;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  margin-left: 20px;
+}
+
+#lista::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(15, 11, 246, 0.826);
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s ease all;
+}
+
+#lista:hover::after {
+  width: 100%;
+}
 /* Css tarjeta Nosotras */
 
 .card-img-top{
@@ -179,22 +213,28 @@ section {
 
 #principal-title{
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 12px;
 }
 
 #luna{
 
   margin-top: 30px;
+  height: 200vh;
 }
 
 #luna img{
   align-items: center;
-  margin-left: 750px;
+  text-align: center;
+  justify-content: center;
 }
 
 #luna #punto{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   font-size: 30px;
-  margin-left: 820px;
   padding-left: 80px;
   padding-right: 80px;
   padding: 20px;
@@ -207,38 +247,50 @@ section {
   font-size: 25px;
   text-align: justify;
   justify-content: center;
+  align-items: center;
   margin: 20px;
   background-color: rgba(73, 83, 105, 0.541);
-  margin-left: 150px;
-  margin-right: 150px;
-  
 }
  
 /* responsive */
 
 @media screen and (min-width: 790px) and (max-width: 1280px) {
 
+.me-auto #links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#container .me-auto #lista{
+  font-size: 20px;
+}
+
   .div-justificada{
     width: 70%;
   }
 
-  #principal-text{
-    width: 70%;
-    padding-left: 40px;
-    padding: 10px;
-    margin-left: 80px;   
+.card-body{
+  background-color: rgba(15, 11, 246, 0.713);
 }
 
-#luna img{
-  margin-left: 140px;
+.overflow{
+  background-color: rgba(15, 11, 246, 0.485);
 }
 
-#luna #punto{
-  margin-left: 300px;
+#luna{
+  height: 350vh;
 }
+
 }
 
 @media screen and (min-width: 425px) and (max-width: 786px) {
+
+  .me-auto #links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
 
   #container .me-auto #lista{
     font-size: 20px;
@@ -254,26 +306,30 @@ section {
 
   #nav #lista1{
     margin-top: 20px;
+    font-size: 20px;
   }
 
-  #principal-text{
-    width: 70%;
-    padding-left: 40px;
-    padding: 10px;
-    margin-left: 80px;   
+.card-body{
+  background-color: rgba(15, 11, 246, 0.713);
 }
 
-#luna img{
-  margin-left: 40px;
+.overflow{
+  background-color: rgba(15, 11, 246, 0.485);
 }
 
-#luna #punto{
-  margin-left: 300px;
+#luna{
+  height: 500vh;
 }
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 200px) and (max-width: 420px) {
+
+  .me-auto #links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
 
   #container .me-auto #lista{
     font-size: 15px;
@@ -289,46 +345,26 @@ section {
 
   #nav #lista1{
     margin-top: 15px;
+    font-size: 15px;
   }
-
-  #principal-title{
-    margin-top: 50px;
-  }
-
-  #principal-text{
-    width: 70%;
-    padding-left: 10px;
-    padding: 10px;
-    margin-left: 10px;  
-    font-size: 15px; 
-}
-
-#luna img{
-  margin-left: 10px;
-  width: 200px;
-}
-
-#luna #punto{
-  margin-left: 100px;
-}
-
-}
 
 #luna{
-  height: 1800px;
+  height: 650vh;
+}
+
+.card-body{
+  background-color: rgba(15, 11, 246, 0.713);
+}
+
+.overflow{
+  background-color: rgba(15, 11, 246, 0.485);
+}
+
 }
 
 
 
-/*#container #lista1{
-  text-decoration: none;
-  color: rgb(255, 145, 0);
-  margin-left: 250px;
-  margin-top: 5px;
-  font-size: calc(20px + 3vmin);
-  flex-direction: row;
-  justify-content: space-around;
-}
+
 
 
 

@@ -4,10 +4,10 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-image:url(../img/arenitaPlayita.jpg);
-    background-size: 100% 100vh;
+    background-image:url(../public/img/arenitaPlayita.jpg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 115vh;
     width: auto;
     position: relative; 
     background-position: inherit;
@@ -20,16 +20,24 @@ body {
   /* Css página inicio */
 
 #Contenedor{
-  background-color: transparent;
+  background-image: url(../public/img/arenitaPlayita.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   position: absolute;
   transform: translate(0%, 0%);
-  margin-top: 0px;
-  height: 365px;
+  margin-top: 100px;
+  height: 380px;
   width: 300px;
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 15px black;
-  margin-left: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 700px;
+  margin-right: center;
+  padding-top: 10px;
+
 
   
 }  
@@ -113,10 +121,11 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  padding: 1px;
   padding-top: 10px;
   color: white;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -134,10 +143,10 @@ footer {
   }
   
   #container2 button{
-      width: 2px;
+      width: 5px;
       margin-left: 1rem;
       margin-right: 3rem;
-      height: 35px;
+      height: 50px;
       padding-right: 3rem;
       margin-top: 15px;
       background-color: black;
@@ -146,16 +155,21 @@ footer {
   #titulo-footer{
     margin-left: 2rem;
     font-family: 'Shantell Sans', cursive;
-    margin-top: 10px;
-
   }
 
   #derechos{
-    font-size: 11px;
+    font-size: 15px;
     margin-left: 2rem;
   }
+
  
 /* css página contacto */
+
+.contact-form{
+  background-image: url(../public/img/arenitaPlayita.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 
 .contact-form h2:hover{
@@ -175,20 +189,43 @@ footer {
 @media screen and (min-width: 790px) and (max-width: 1280px) {
 
   :root{
-    background-image: none;
     background-color: black;
+  }
+  
+  body{
+    background-color: black;
+    background-image: none;
+    height: 0px;
   }
  
   #Contenedor{
     margin-left: 400px;
     margin-top: 80px;
-    height: 365px;
+    height: 400px;
   }
 
   .contact-form{
-    width: 500px;
+    width: 300px;
     margin-left: 50px;
     margin: 50px;
+    margin-top: 10px;
+    height: 300px;
+  }
+
+  form h3{
+    font-size: 25px;
+  }
+
+  form h4{
+    font-size: 20px;
+  }
+
+  form input{
+    height: 20px;
+  }
+
+  form textarea{
+    height: 40px;
   }
 
   #titulo-footer{
@@ -196,92 +233,166 @@ footer {
   }
   
 
-  #list-footer h6{
-    max-width: 90%;
+  #list-footer h4{
+    max-width: 100%;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   #container2 button img{
     height: 30px;
     width: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }  
 }
 
   @media screen and (min-width: 425px) and (max-width: 786px) {
 
+
     body{
-      background-size: 100% 100%;
+      background-color: black;
+      background-image: none;
+      height: 0px;
     }
 
     #Contenedor{
       margin-left: 80px;
       margin-top: 100px;
-      height: 300px;
+      height: 420px;
     }
 
     .contact-form{
-      width: 500px;
+      width: 300px;
       margin-left: 50px;
       margin: 50px;
     }
     
+    form h3{
+      font-size: 25px;
+    }
+  
+    form h4{
+      font-size: 20px;
+    }
+  
+    form input{
+      height: 20px;
+    }
+  
+    form textarea{
+      height: 40px;
+    }
+
     #titulo-footer{
       padding-top: 1px;
       align-items: center;
+      font-size: 10px;
   }
 
-    #list-footer h6{
-      max-width: 90%;
+    #list-footer h4{
+      max-width: 100%;
       align-items: center;
       justify-content: center;
+      font-size: 8px;
+    }
+
+    #derechos{
       font-size: 10px;
     }
 
+    #container2 button{
+      display: flex;
+      flex-direction: row;
+      height: 15px;
+      width: 15px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }  
+
     #container2 button img{
-      height: 20px;
-      width: 20px;
+      height: 15px;
+      width: 15px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }  
   }
 
-  @media screen and (min-width: 320px) and (max-width: 420px) {
+  @media screen and (min-width: 200px) and (max-width: 420px) {
     
     body{
-      background-size: 100% 100%;
+      background-color: black;
+      background-image: none;
+      height: 0px;
     }
 
     #Contenedor{
-      margin-left: 10px;
+      margin-left: 50px;
       margin-top: 120px;
-      height: 365px;
+      height: 400px;
     }
 
     .contact-form{
-      width: 500px;
-      margin-left: 10px;
-      padding-left: 10px;
-      margin: 10px;
+      width: 300px;
+      margin-left: 5px;
+      padding-left: 5px;
+      margin: 5px;
+    }
+
+    form h3{
+      font-size: 25px;
+    }
+  
+    form h4{
+      font-size: 20px;
+    }
+  
+    form input{
+      height: 20px;
+    }
+  
+    form textarea{
+      height: 40px;
     }
 
     #titulo-footer{
-      font-size: 15px;
+      padding-top: 1px;
       align-items: center;
-    justify-content: center;
+      font-size: 10px;
 
   } 
 
-  #list-footer h6{
-    justify-content: space-between;
+  #list-footer h4{
     max-width: 100%;
     align-items: center;
     justify-content: center;
+    font-size: 8px;
+  }
+
+  #derechos{
     font-size: 10px;
   }
 
+  #container2 button{
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  } 
+  
   #container2 button img{
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }  
 
 }

@@ -20,7 +20,6 @@ const Principal = () => {
         <br />
     <div id="principal">
         <br />
-        <br />
         <h1 id="principal-title"> Solsticio</h1>
         <p id="principal-text"> El Servicio de Hidrología Naval expresa en su sitio oficial que el solsticio de invierno de este 2023 ocurrirá el 21 de junio a las 11:58 horas. De esa manera, se convertirá en el día más corto de este 2023. El mismo se desarrollará hasta el 23 de septiembre, cuando un nuevo equinoccio de comienzo a la primavera en Argentina.</p>
     </div>

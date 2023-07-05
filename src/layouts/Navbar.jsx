@@ -11,11 +11,13 @@ const NavBarExample = () => {
                 <img src="./img/logo.png" width='230'/>
                 <Nav.Link id="lista1" as={Link} to="/" ><span><span>Un Salto Al Clima</span></span></Nav.Link> 
             <Nav className="me-auto">
-                <Nav.Link id="lista" as={Link} to="/Inicio" ><span><span>Inicio</span></span></Nav.Link>
-                <Nav.Link id="lista" as={Link} to="/nosotros"><span><span>Nosotros</span></span></Nav.Link>
-                <Nav.Link id="lista" as={Link} to="/contacto"><span><span>Contacto</span></span></Nav.Link>                
+                <div id="links">
+                    <Nav.Link id="lista" as={Link} to="/Inicio" ><span><span>Inicio</span></span></Nav.Link>
+                    <Nav.Link id="lista" as={Link} to="/nosotros"><span><span>Nosotros</span></span></Nav.Link>
+                    <Nav.Link id="lista" as={Link} to="/contacto"><span><span>Contacto</span></span></Nav.Link>
+                </div>                
             </Nav>
-            </Nav.Link>
+            </Nav.Link>    
         </Container>
     </Navbar>  
 

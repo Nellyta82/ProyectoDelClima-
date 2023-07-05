@@ -22,14 +22,14 @@ const Footer = () => {
         <div className='col-sm-2 col-lg-4 col-xs-12 footer-text-contac text-center' align='text-center'>
             <div id="list-footer">
                 <span className='font-footer'>  
-                <h6>Contacto</h6>
+                <h4>Contacto</h4>
                 </span>
-                <h6>Dirección: Av. Rivadavia 5200 CABA-Argentina</h6>
-                <h6>unsaltoalclima@gmail.com</h6>    
+                <h4>Dirección: Av. Rivadavia 5200 CABA-Argentina</h4>
+                <h4>unsaltoalclima@gmail.com</h4>    
             </div>
         </div>
         <div id='container2'>
-         <ul classpie="nav col-md-4 list-unstyled d-flex">
+         <ul classpie="nav col-md-4">
             <button> <a href="https://twitter.com/" > <img src="./img/Twitter.jpg" alt="instagram" width='50px' height='50px'/> </a></button>
             <button>  <a href="https://www.instagram.com/">  <img src="./img/Instagram (2).jpg" alt="instagram" width='50px' height='50px'/> </a></button>
             <button> <a href="https://www.facebook.com/"> <img src="./img/Facebook.jpg" alt="instagram" width='50px' height='50px'/> </a></button>
